@@ -1,0 +1,55 @@
+@charset "UTF-8";
+body, ul {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  color: black;
+  text-decoration: none;
+  font-family: sans-serif;
+}
+a:hover {
+  background-color: rgba(0, 0, 0, 0.05);
+}
+
+#logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+#header {
+  box-sizing: border-box;
+  height: 70px;
+  padding: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #e7e7e7;
+}
+
+#menu {
+  display: flex;
+  list-style-type: none;
+  gap: 0.5rem;
+  /*ESCONDE O MENU NUMA TELA MENOR*/
+}
+#menu a {
+  display: block;
+  padding: 1.5rem;
+}
+@media screen and (max-width: 768px) {
+  #menu {
+    display: none;
+  }
+}
+
+#btn-mobile {
+  display: none;
+  /*REVELA O BOTÃO NUMA TELA MAIOR*/
+}
+@media screen and (max-width: 768px) {
+  #btn-mobile {
+    display: block;
+  }
+}/*# sourceMappingURL=style.css.map */
