@@ -40,16 +40,42 @@ a:hover {
 }
 @media screen and (max-width: 768px) {
   #menu {
-    display: none;
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 0;
+    top: 70px;
+    right: 0;
+    transition: 1s;
+    z-index: 1000;
+    background: #e7e7e7;
+    visibility: hidden;
+    overflow-y: hidden;
+  }
+  #menu a {
+    padding: 1rem 0;
+    margin: 0 1rem;
+    border-bottom: 2px solid rgba(0, 0, 0, 0.05);
   }
 }
 
 #btn-mobile {
   display: none;
-  /*REVELA O BOTÃO NUMA TELA MAIOR*/
+  /*REVELA O BOTÃO NUMA TELA MENOR*/
 }
 @media screen and (max-width: 768px) {
   #btn-mobile {
     display: block;
+  }
+}
+
+/* QUANDO A NAV TIVER A CLASS: ACTIVE*/
+#nav.active #menu {
+  height: calc(100vh - 70px);
+}
+@media screen and (max-width: 768px) {
+  #nav.active #menu {
+    visibility: visible;
+    overflow-y: visible;
   }
 }/*# sourceMappingURL=style.css.map */
