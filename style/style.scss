@@ -1,3 +1,7 @@
+body {
+    background-color: rgba(0, 0, 0, 0.849);
+}
+
 body, ul {
     margin: 0;
     padding: 0;
@@ -94,6 +98,16 @@ a {
 
     #hamburguer {
         border-top-color: transparent;
+
+        &::before {
+            transform: rotate(135deg);
+        }
+
+        &::after {
+            /*A PROPRIEDADE TOP SÓ FUNCIONA COM POSITION RELATIVE, ABSOLUTE OU FIXED*/
+            transform: rotate(-135deg);
+            top: -7px;
+        }
     }
 }
 
@@ -112,6 +126,8 @@ a {
             height: 2px;
             background-color: currentColor; /*UTILIZA A COR ATUAL DO ELEMENTO PRINCIPAL*/
             margin-top: 5px;
+            transition: 0.8s;
+            position: relative;
         }
     }
 }
