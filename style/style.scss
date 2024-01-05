@@ -68,7 +68,14 @@ a {
     /*REVELA O BOTÃO NUMA TELA MENOR*/
     @media screen and (max-width: 768px) {
         & {
-            display: block;
+            display: flex;
+            gap: 1.5rem;
+            padding: 0.5rem 1rem;
+            font-size: 1rem;
+            border: none;
+            background: none;
+            cursor: pointer;
+
         }
     }
 }
@@ -80,9 +87,37 @@ a {
         & {
             @media screen and (max-width: 768px) {
                 visibility: visible;
-                overflow-y: visible;
+                overflow-y: auto;
             }
         }
     }
+
+    #hamburguer {
+        border-top-color: transparent;
+    }
 }
+
+#hamburguer {
+    @media screen and (max-width: 768px) {
+        & {
+            width: 20px;
+            border-top: 2px solid;
+            color: black;
+        }
+
+        &::after, &::before {
+            content: '';
+            display: block;
+            width: 20px;
+            height: 2px;
+            background-color: currentColor; /*UTILIZA A COR ATUAL DO ELEMENTO PRINCIPAL*/
+            margin-top: 5px;
+        }
+    }
+}
+
+
+
+
+
 

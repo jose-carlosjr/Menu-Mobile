@@ -65,7 +65,13 @@ a:hover {
 }
 @media screen and (max-width: 768px) {
   #btn-mobile {
-    display: block;
+    display: flex;
+    gap: 1.5rem;
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    border: none;
+    background: none;
+    cursor: pointer;
   }
 }
 
@@ -76,6 +82,25 @@ a:hover {
 @media screen and (max-width: 768px) {
   #nav.active #menu {
     visibility: visible;
-    overflow-y: visible;
+    overflow-y: auto;
+  }
+}
+#nav.active #hamburguer {
+  border-top-color: transparent;
+}
+
+@media screen and (max-width: 768px) {
+  #hamburguer {
+    width: 20px;
+    border-top: 2px solid;
+    color: black;
+  }
+  #hamburguer::after, #hamburguer::before {
+    content: "";
+    display: block;
+    width: 20px;
+    height: 2px;
+    background-color: currentColor; /*UTILIZA A COR ATUAL DO ELEMENTO PRINCIPAL*/
+    margin-top: 5px;
   }
 }/*# sourceMappingURL=style.css.map */
