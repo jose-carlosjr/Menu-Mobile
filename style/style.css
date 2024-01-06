@@ -9,7 +9,7 @@ body, ul {
 }
 
 a {
-  color: black;
+  color: white;
   text-decoration: none;
   font-family: sans-serif;
 }
@@ -29,7 +29,7 @@ a:hover {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  background: #e7e7e7;
+  background: #6e1e82;
 }
 
 #menu {
@@ -53,7 +53,7 @@ a:hover {
     right: 0;
     transition: 1s;
     z-index: 1000;
-    background: #e7e7e7;
+    background: #6e1e82;
     visibility: hidden;
     overflow-y: hidden;
   }
@@ -106,7 +106,7 @@ a:hover {
   #hamburguer {
     width: 20px;
     border-top: 2px solid;
-    color: black;
+    color: white;
   }
   #hamburguer::after, #hamburguer::before {
     content: "";
