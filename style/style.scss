@@ -36,6 +36,7 @@ a {
     display: flex;
     list-style-type: none;
     gap: 0.5rem;
+    box-sizing: border-box;
 
     a {
         display: block;

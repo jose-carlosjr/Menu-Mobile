@@ -36,6 +36,7 @@ a:hover {
   display: flex;
   list-style-type: none;
   gap: 0.5rem;
+  box-sizing: border-box;
   /*ESCONDE O MENU NUMA TELA MENOR*/
 }
 #menu a {
