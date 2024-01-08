@@ -29,12 +29,3 @@ function toggleMenu() {
 
 btnMobile.addEventListener('click', toggleMenu)
 btnMobile.addEventListener('touchstart', toggleMenu)
-
-/////////////////////////////////////////////////////// TESTE
-
-/*
-btnMobile.addEventListener('touchstart', function(event){ 
-    event.preventDefault()
-    //decide o que a funcao vai fazer
-})
-*/
